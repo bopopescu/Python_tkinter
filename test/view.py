@@ -17,9 +17,9 @@ from tkinter.messagebox import *
 
 
 class InputFrame(Frame):  # 继承Frame类
-    def __init__(self, master=None):
-        Frame.__init__(self, master)
-        self.root = master  # 定义内部变量root
+    def __init__(self, main=None):
+        Frame.__init__(self, main)
+        self.root = main  # 定义内部变量root
         self.itemName = StringVar()
         self.importPrice = StringVar()
         self.sellPrice = StringVar()
@@ -40,9 +40,9 @@ class InputFrame(Frame):  # 继承Frame类
 
 
 class QueryFrame(Frame):  # 继承Frame类
-    def __init__(self, master=None):
-        Frame.__init__(self, master)
-        self.root = master  # 定义内部变量root
+    def __init__(self, main=None):
+        Frame.__init__(self, main)
+        self.root = main  # 定义内部变量root
         self.itemName = StringVar()
         self.createPage()
 
@@ -51,9 +51,9 @@ class QueryFrame(Frame):  # 继承Frame类
 
 
 class CountFrame(Frame):  # 继承Frame类
-    def __init__(self, master=None):
-        Frame.__init__(self, master)
-        self.root = master  # 定义内部变量root
+    def __init__(self, main=None):
+        Frame.__init__(self, main)
+        self.root = main  # 定义内部变量root
         self.createPage()
 
     def createPage(self):
@@ -61,9 +61,9 @@ class CountFrame(Frame):  # 继承Frame类
 
 
 class AboutFrame(Frame):  # 继承Frame类
-    def __init__(self, master=None):
-        Frame.__init__(self, master)
-        self.root = master  # 定义内部变量root
+    def __init__(self, main=None):
+        Frame.__init__(self, main)
+        self.root = main  # 定义内部变量root
         self.createPage()
 
     def createPage(self):

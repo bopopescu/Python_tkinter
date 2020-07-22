@@ -17,8 +17,8 @@ from test.view import *  # 菜单栏对应的各个子页面
 
 
 class MainPage(object):
-    def __init__(self, master=None):
-        self.root = master  # 定义内部变量root
+    def __init__(self, main=None):
+        self.root = main  # 定义内部变量root
         self.root.geometry('%dx%d' % (600, 450))  # 设置窗口大小
         self.createPage()
 

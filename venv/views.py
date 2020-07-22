@@ -19,9 +19,9 @@ __author__ = 'Mr.Zhang'
 # 个人信息界面
 class Per_details(Frame):
     # 初始化
-    def __init__(self, master=None, stuNo=None):
-        Frame.__init__(self,master) #Fram初始化
-        self._root = master
+    def __init__(self, main=None, stuNo=None):
+        Frame.__init__(self,main) #Fram初始化
+        self._root = main
         # self.stuNo.set("sdfsdf")
         # 定义展示数据
         self.stuNo = StringVar()
@@ -162,9 +162,9 @@ class Per_details(Frame):
 
 # 成绩查询页面
 class Query_results(Frame):
-    def __init__(self, master=None, stuNo=None):
-        Frame.__init__(self, master)
-        self.root = master
+    def __init__(self, main=None, stuNo=None):
+        Frame.__init__(self, main)
+        self.root = main
         self.stuNo = stuNo
         # 获取数据
         self.Assignment()

@@ -15,9 +15,9 @@ __author__ = 'Mr.Zhang'
 from tkinter import *
 from views import *
 class HomePage(object):
-    def __init__(self, master=None, stuNo=None):
+    def __init__(self, main=None, stuNo=None):
         self.stuNo = stuNo
-        self.root = master
+        self.root = main
         self.root.geometry('600x450')
         self.createPage()
 

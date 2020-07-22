@@ -22,9 +22,9 @@ from PIL import Image, ImageTk
 # 定义类
 class LoginPage(object):
     # 初始化
-    def __init__(self, master=None):
+    def __init__(self, main=None):
         # 我们需要一个 root 控件, 即根窗口, 它包括标题栏和其他一些由本地窗口系统提供的装饰. root 控件需要在创建其他控件前创建, 并且一个窗口只能有一个 root 控件.
-        self.root = master
+        self.root = main
         # 窗口大小
         self.root.geometry('600x450')
         # 设置两个变量
